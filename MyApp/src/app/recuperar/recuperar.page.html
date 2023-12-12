@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Oh, no! olvide tu contraseña </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" id="titulo">Oh, no! olvide tu contraseña </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <br>
+        <h1>Oh, no! olvide tu contraseña </h1>
+      </ion-card-header>
+    </ion-card>
+  </div>
+
+  <ion-card-content>
+    <ion-item>
+      <ion-input [(ngModel)]="user.usuario" label="Ingresa tu E-mail" labelPlacement="floating" placeholder="Ingrese su Correo"></ion-input>
+    </ion-item><br>
+    <ion-button>Enviar</ion-button>
+    <h1></h1><br>
+    <br>
+    <h3>En su correo le llegaran indicaciones para recuperar su contraseña</h3>
+  </ion-card-content>
+</ion-content>
